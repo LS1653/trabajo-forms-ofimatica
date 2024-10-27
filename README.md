@@ -552,3 +552,75 @@ Option Explicit
 
 Public boletaEscogidaGlobal As String
 ```
+
+## Capturas del programa
+### Formulario 1
+#### Formulario en el programador 
+![image](https://github.com/user-attachments/assets/13a44a52-0e38-4dbe-95f1-4dbde653a61b)
+
+#### Formulario desplegado en excel 
+![image](https://github.com/user-attachments/assets/6738ecc3-5f51-4c21-bb5c-b126c433d2df)
+
+### Ingresar boleta
+![image](https://github.com/user-attachments/assets/2fbe5c65-1d0d-4d2c-b4e3-508b12cd59ee)
+
+![image](https://github.com/user-attachments/assets/7d15c8bb-b2f5-436f-9ffe-b4efc7b7b947)
+
+![image](https://github.com/user-attachments/assets/0ff352a2-7692-4383-a13b-a851608b9842)
+
+![image](https://github.com/user-attachments/assets/3bb95d2e-80dd-4c63-bcb2-051cbc8be37d)
+
+![image](https://github.com/user-attachments/assets/b3bcd44c-88d2-4fd8-9c16-a90f3a9ae697)
+
+![image](https://github.com/user-attachments/assets/ad47e113-726e-44c0-ac63-f4986dbd2256)
+
+#### Escoger boleta con la que se jugara
+![image](https://github.com/user-attachments/assets/1109d69c-9d5c-443f-8147-584056a75eb6)
+
+#### Jugar
+![image](https://github.com/user-attachments/assets/59f0c04e-c8f8-4276-9664-fa26bd443d3e)
+
+![image](https://github.com/user-attachments/assets/324557c0-ef75-4e1a-9fa5-d1ed07d0d9de)
+
+![image](https://github.com/user-attachments/assets/95a565a0-f2e3-4a5b-a476-d170d8779ac7)
+
+![image](https://github.com/user-attachments/assets/97e66256-1e31-44cf-be14-25aa9d8a6ff8)
+
+#### Salir
+![image](https://github.com/user-attachments/assets/ad716f19-9d0d-45ef-b716-e1b77d581822)
+
+![image](https://github.com/user-attachments/assets/aa59dad0-0d38-4465-a205-ed8fd7c271f1)
+
+### Formulario 2
+#### Formulario en el programador
+![image](https://github.com/user-attachments/assets/7b680e8f-bc65-449e-91e0-c02996d7da46)
+
+### Formulario desplegado en excel 
+![image](https://github.com/user-attachments/assets/f516338f-ad9c-450f-859f-39aa720ed0da)
+
+### Obtener ganador
+![image](https://github.com/user-attachments/assets/ecd5ec02-52db-4667-9d81-7a52c0268eb3)
+
+![image](https://github.com/user-attachments/assets/b0dcb2cc-0aeb-43b0-b6a6-0b0993c8ab66)
+
+### Verificar ganadores
+![image](https://github.com/user-attachments/assets/c3874857-3dd1-4059-99fb-a4e9e680c7ca)
+
+![image](https://github.com/user-attachments/assets/e6016e0f-1e00-4f44-845b-9e0196a46f54)
+
+![image](https://github.com/user-attachments/assets/29b28e86-352d-4436-8e1d-58b09a91da87)
+
+![image](https://github.com/user-attachments/assets/dfca78ad-86b0-441c-8f11-28fb462510c5)
+
+![image](https://github.com/user-attachments/assets/10709bb8-f25d-4dd1-b0fc-bce8604d2ed4)
+
+![image](https://github.com/user-attachments/assets/2d41214a-6af4-4785-b56d-1357fa30d6a9)
+
+![image](https://github.com/user-attachments/assets/257fa478-fdd9-4acc-b307-bf34224b134a)
+
+![image](https://github.com/user-attachments/assets/245288da-9c28-4cc9-a4b9-826b28971a0f)
+
+### Regresar
+![image](https://github.com/user-attachments/assets/8cfa42c6-0ce5-42e9-b082-0b12cab39e59)
+
+![image](https://github.com/user-attachments/assets/53b94888-76cf-4410-8465-a1615019db3f)
