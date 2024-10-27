@@ -545,3 +545,10 @@ Private Sub Verificarganador_Click()
     End If
 End Sub
 ```
+
+### Modulo3
+```
+Option Explicit
+
+Public boletaEscogidaGlobal As String
+```
