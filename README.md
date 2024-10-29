@@ -217,6 +217,14 @@ Private Sub btnIngresar_Click()
            End If
         End If
     Next i
+
+    For i = 1 To 7
+    ' Comprobar si es un entero
+        If Not IsNumeric(numeros(i)) Or Not numeros(i) = Int(numeros(i)) Then
+            MsgBox "Todos los campos deben tener un valor numérico entero.", vbExclamation
+            Exit Sub
+        End If
+    Next i
     
     ' Verificar si hay números duplicados en los ComboBox
     duplicado = False
