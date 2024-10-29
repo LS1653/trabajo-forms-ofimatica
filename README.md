@@ -83,7 +83,7 @@ Private Sub UserForm_Initialize()
 
     ' Generar y asignar un número aleatorio único a ComboBox1
     Do
-        randomNumber = Int((43) * Rnd) ' Número aleatorio entre 0 y 9
+        randomNumber = Int(43 * Rnd) + 1 ' Número aleatorio entre 1 y 43
         On Error Resume Next ' Ignorar errores si el número ya existe
         numbersUsed.Add randomNumber, CStr(randomNumber) ' Añadir número a la colección
         On Error GoTo 0
@@ -92,7 +92,7 @@ Private Sub UserForm_Initialize()
 
     ' Generar y asignar un número aleatorio único a ComboBox2
     Do
-        randomNumber = Int((43) * Rnd)
+        randomNumber = Int(43 * Rnd) + 1
         On Error Resume Next
         numbersUsed.Add randomNumber, CStr(randomNumber)
         On Error GoTo 0
@@ -101,7 +101,7 @@ Private Sub UserForm_Initialize()
 
     ' Generar y asignar un número aleatorio único a ComboBox3
     Do
-        randomNumber = Int((43) * Rnd)
+        randomNumber = Int(43 * Rnd) + 1
         On Error Resume Next
         numbersUsed.Add randomNumber, CStr(randomNumber)
         On Error GoTo 0
@@ -109,7 +109,7 @@ Private Sub UserForm_Initialize()
     ComboBox3.Value = randomNumber
     
     Do
-        randomNumber = Int((43) * Rnd)
+        randomNumber = Int(43 * Rnd) + 1
         On Error Resume Next
         numbersUsed.Add randomNumber, CStr(randomNumber)
         On Error GoTo 0
@@ -117,7 +117,7 @@ Private Sub UserForm_Initialize()
     ComboBox4.Value = randomNumber
     
     Do
-        randomNumber = Int((43) * Rnd)
+        randomNumber = Int(43 * Rnd) + 1
         On Error Resume Next
         numbersUsed.Add randomNumber, CStr(randomNumber)
         On Error GoTo 0
@@ -125,7 +125,7 @@ Private Sub UserForm_Initialize()
     ComboBox5.Value = randomNumber
     
     Do
-        randomNumber = Int((43) * Rnd)
+        randomNumber = Int(43 * Rnd) + 1
         On Error Resume Next
         numbersUsed.Add randomNumber, CStr(randomNumber)
         On Error GoTo 0
@@ -134,7 +134,7 @@ Private Sub UserForm_Initialize()
     
     
     ' Generar y asignar un número aleatorio entre 0 y 9 a cada ComboBox al cargar el formulario
-    randomNumber = Int((16) * Rnd) ' Número aleatorio entre 0 y 9
+    randomNumber = Int((16) * Rnd) + 1 ' Número aleatorio entre 0 y 9
     ComboBalota.Value = randomNumber
     '--------------------------------
     
