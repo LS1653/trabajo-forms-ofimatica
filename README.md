@@ -203,6 +203,20 @@ Private Sub btnIngresar_Click()
             Exit Sub
         End If
     Next i
+
+    ' Validar que no haya numeros mayores o menores a los permitidos
+    For i = 1 To 6
+        If numeros(i) > 43 Or numeros(i) < 1 Then
+            MsgBox "Todos los campos deben ser un número igual o mayor a 1 y menor o igual a 43.", vbExclamation
+            Exit Sub
+        End If
+        If i = 6 Then
+           If numeros(7) > 16 Or numeros(7) < 1 Then
+              MsgBox "La balota debe ser igual o mayor a 1 y menor o igual a 16.", vbExclamation
+              Exit Sub
+           End If
+        End If
+    Next i
     
     ' Verificar si hay números duplicados en los ComboBox
     duplicado = False
