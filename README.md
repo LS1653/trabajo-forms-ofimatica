@@ -205,8 +205,8 @@ Private Sub btnIngresar_Click()
     
     ' Verificar si hay números duplicados en los ComboBox
     duplicado = False
-    For j = 1 To 7
-        For k = j + 1 To 7
+    For j = 1 To 6
+        For k = j + 1 To 6
             If numeros(j) = numeros(k) Then
                 duplicado = True
                 Exit For
