@@ -58,8 +58,6 @@ Private Function BoletaRegistrada(boletaSeleccionada As String) As Boolean
     BoletaRegistrada = False
 End Function
 
-
-
 Private Sub UserForm_Initialize()
     ' Llenar los cuadros combinados con números del 0 al 9
     Dim i As Integer
@@ -84,7 +82,7 @@ Private Sub UserForm_Initialize()
 
     ' Generar y asignar un número aleatorio único a ComboBox1
     Do
-        randomNumber = Int(43 * Rnd) + 1 ' Número aleatorio entre 1 y 43
+        randomNumber = Int(43 * Rnd) + 1 ' Número aleatorio entre 0 y 9
         On Error Resume Next ' Ignorar errores si el número ya existe
         numbersUsed.Add randomNumber, CStr(randomNumber) ' Añadir número a la colección
         On Error GoTo 0
@@ -203,7 +201,6 @@ Private Sub btnIngresar_Click()
             Exit Sub
         End If
     Next i
-
     ' Validar que no haya numeros mayores o menores a los permitidos
     For i = 1 To 6
         If numeros(i) > 43 Or numeros(i) < 1 Then
@@ -217,7 +214,7 @@ Private Sub btnIngresar_Click()
            End If
         End If
     Next i
-
+    
     For i = 1 To 7
     ' Comprobar si es un entero
         If Not IsNumeric(numeros(i)) Or Not numeros(i) = Int(numeros(i)) Then
@@ -397,6 +394,7 @@ Private Sub btnObtenerGanador_Click()
     MsgBox "Números ganadores generados exitosamente.", vbInformation
 End Sub
 
+
 Private Sub Verificarganador_Click()
     Dim ws As Worksheet
     Dim lastRow As Long
@@ -417,7 +415,29 @@ Private Sub Verificarganador_Click()
     Dim resultado As Variant
     Dim filaBoleta As Long
     Dim numeroColumnaA As String
-     Dim encontrado As Boolean
+    Dim encontrado As Boolean
+    Dim valor As Variant
+    
+    ' Verificar si los TextBox están vacíos
+    If TextBoxNroGanador1.Value = "" Or TextBoxNroGanador2.Value = "" Or TextBoxNroGanador3.Value = "" Or _
+       TextBoxNroGanador4.Value = "" Or TextBoxNroGanador5.Value = "" Or TextBoxNroGanador6.Value = "" Or _
+       TextBoxBalota.Value = "" Then
+        MsgBox "Por favor, completa todos los números ganadores y la balota antes de verificar.", vbExclamation
+        Exit Sub
+    End If
+    
+    ' Verificar si los valores son enteros
+    On Error Resume Next ' Evitar error si el valor no es numérico
+    For Each valor In Array(TextBoxNroGanador1.Value, TextBoxNroGanador2.Value, TextBoxNroGanador3.Value, _
+                            TextBoxNroGanador4.Value, TextBoxNroGanador5.Value, TextBoxNroGanador6.Value, _
+                            TextBoxBalota.Value)
+        If Not IsNumeric(valor) Or valor <> CInt(valor) Then
+           MsgBox "Por favor, ingresa solo valores numéricos enteros en todos los campos.", vbExclamation
+           Exit Sub
+        End If
+    Next valor
+    On Error GoTo 0 ' Reanudar manejo normal de errores
+    
     
     ' Definir la hoja de cálculo donde están las boletas
     Set ws = ThisWorkbook.Sheets("Hoja3") ' Cambia "Hoja3" por el nombre de tu hoja
